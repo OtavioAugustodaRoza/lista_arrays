@@ -7,10 +7,22 @@
     */
 
     //ENTRADA
-
-
+const numerozinho1 = Number(prompt("qual número você deseja hein?").trim());
+const numerozinho2 = Number(prompt("qual o segundo número que você deseja?").trim());
+let lista = [numerozinho1,numerozinho2];
     //PROCESSAMENTO
-
+if (numerozinho1 > numerozinho2){
+    lista = [numerozinho2,numerozinho1];
+    alert(lista.join(" - "));
+    
+} else if (numerozinho2 > numerozinho1){
+    lista = [numerozinho1,numerozinho2];
+    alert(lista.join(" - "));
+} else if (numerozinho1 === numerozinho2){
+    alert(`${numerozinho1} = ${numerozinho2}`);
+} else {
+    alert("coloca número não letra e nem sinal!");
+}
 
     //SAÍDA
 
