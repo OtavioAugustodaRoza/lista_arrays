@@ -6,13 +6,35 @@
     Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
     */
 
-    //ENTRADA
-const numero1 = Number(prompt("escreva o primeiro número:").trim());
-const numero2 = Number(prompt("escreva o segundo número:").trim());
-const numero3 = Number(prompt("escreva o terceiro número:").trim());
-let lista = [numero1,numero2,numero3];
-    //PROCESSAMENTO
+    // ENTRADA
+const numero1 = Number(prompt("Escreva o primeiro número:").trim());
+const numero2 = Number(prompt("Escreva o segundo número:").trim());
+const numero3 = Number(prompt("Escreva o terceiro número:").trim());
+let lista = [numero1, numero2, numero3];
+    // PROCESSAMENTO: organiza em ordem decrescente
+if (numero1 >= numero2 && numero1 >= numero3) {
+    // numero1 é o maior
+    if (numero2 >= numero3) {
+        lista = [numero1, numero2, numero3];
+    } else {
+        lista = [numero1, numero3, numero2];
+    }
+} else if (numero2 >= numero1 && numero2 >= numero3) {
+    // numero2 é o maior
+    if (numero1 >= numero3) {
+        lista = [numero2, numero1, numero3];
+    } else {
+        lista = [numero2, numero3, numero1];
+    }
+} else {
+    // numero3 é o maior
+    if (numero1 >= numero2) {
+        lista = [numero3, numero1, numero2];
+    } else {
+        lista = [numero3, numero2, numero1];
+    }
+}
 
-    //SAÍDA
-
+    // SAÍDA
+    alert(lista.join(" - "));
 </script>

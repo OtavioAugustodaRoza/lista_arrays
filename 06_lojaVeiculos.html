@@ -13,11 +13,83 @@
     */
 
     //ENTRADA
+let carrosSUV = ["TIGGO", "SPORTAGE", "TUCSON", "ECOSPORT"];
+let cassosSedan = ["CIVIC", "CORROLA", "ARIZZO", "FUSION"];
+let carrosHatch = ["308", "FOCUS", "i30"];
 
+const tipo1 = prompt("digite o nome do tipo de carro que deseja inserir: suv/sedan/hatch").trim().toUpperCase();
+const carro1 = prompt("digite o nome do carro que deseja inserir:").trim().toUpperCase();
+const tipo2 = prompt("digite o nome do tipo de carro que deseja inserir: suv/sedan/hatch").trim().toUpperCase();
+const carro2 = prompt("digite o nome do carro que deseja inserir:").trim().toUpperCase();
+const tipo3 = prompt("digite o nome do tipo de carro que deseja inserir: suv/sedan/hatch").trim().toUpperCase();
+const carro3 = prompt("digite o nome do carro que deseja inserir:").trim().toUpperCase();
 
     //PROCESSAMENTO
+if ("SUV"===tipo1) {
+    if (carrosSUV.indexOf(carro1) !== -1){
+        carrosSUV.push(carro1);
+    }else {
+        alert("Ops parece que esse carro já está na lista.");
+    }
+} else if ("SEDAN" === tipo1) {
+    if (cassosSedan.indexOf(carro1) !== -1){
+        cassosSedan.push(carro1);
+    }else {
+        alert("Ops parece que esse carro já está na lista.");
+    }
+} else if ("HATCH" === tipo1) {
+    if (carrosHatch.indexOf(carro1) !== -1){
+        carrosHatch.push(carro1);
+    }else {
+        alert("Ops parece que esse carro já está na lista.");
+    }
+}else{
+    alert("O tipo de carro que você escreveu não existe!Favor se atentar as opções.");
+}
 
+if ("SUV"===tipo2) {
+    if (carrosSUV.indexOf(carro2) !== -1){
+        carrosSUV.push(carro2);
+    }else {
+        alert("Ops parece que esse carro já está na lista.");
+    }
+} else if ("SEDAN" === tipo2) {
+    if (cassosSedan.indexOf(carro2) !== -1){
+        cassosSedan.push(carro2);
+    }else {
+        alert("Ops parece que esse carro já está na lista.");
+    }
+} else if ("HATCH" === tipo2) {
+    if (carrosHatch.indexOf(carro2) !== -1){
+        carrosHatch.push(carro2);
+    }else {
+        alert("Ops parece que esse carro já está na lista.");
+    }
+}else{
+    alert("O tipo de carro que você escreveu não existe!Favor se atentar as opções.");
+}
 
+if ("SUV"===tipo3) {
+    if (carrosSUV.indexOf(carro3) !== -1){
+        carrosSUV.push(carro3);
+    }else {
+        alert("Ops parece que esse carro já está na lista.");
+    }
+} else if ("SEDAN" === tipo3) {
+    if (cassosSedan.indexOf(carro3) !== -1){
+        cassosSedan.push(carro3);
+    }else {
+        alert("Ops parece que esse carro já está na lista.");
+    }
+} else if ("HATCH" === tipo3) {
+    if (carrosHatch.indexOf(carro3) !== -1){
+        carrosHatch.push(carro3);
+    }else {
+        alert("Ops parece que esse carro já está na lista.");
+    }
+}else{
+    alert("O tipo de carro que você escreveu não existe!Favor se atentar as opções.");
+}
     //SAÍDA
-
+alert(`lista de carros Suv:${carrosSUV}. lista de carros Sedan:${cassosSedan}. lista de carros Hatch:${carrosHatch}.`);
 </script>
