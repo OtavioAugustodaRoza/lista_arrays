@@ -9,10 +9,16 @@
     */
 
     //ENTRADA
-
-
+const palavra = prompt("digite uma palavra!").trim().toLowerCase();
+const letra = prompt("digite uma letra:");
+const lista = [palavra];
     //PROCESSAMENTO
-
+if (lista.indexOf(letra) !== -1){
+    const indice=lista.prototype.indexOf("a");
+    alert(`está letra existe na palavra que você digitou e ela esta na posição ${indice}`);
+}else{
+    alert("essa letra não existe na palavra que voce havia digitado");
+}
 
     //SAÍDA
 
